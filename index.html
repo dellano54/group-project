@@ -22,6 +22,7 @@
       color: #333;
       transition: background-color 0.3s ease;
       padding: 20px;
+      flex-direction: column;
     }
 
     /* Mood Button Styles */
@@ -91,6 +92,41 @@
       background-color: #2ecc71;
       color: white;
     }
+
+    /* Check it Out Banner */
+    .checkout-banner {
+      margin-top: 30px;
+      padding: 15px;
+      background-color: #3498db;
+      color: white;
+      border-radius: 25px;
+      text-align: center;
+      font-size: 18px;
+      width: 100%;
+      max-width: 400px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .checkout-banner:hover {
+      background-color: #2980b9;
+    }
+
+    .checkout-banner a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .checkout-banner .link-text {
+      display: block;
+      margin-top: 10px;
+      font-size: 16px;
+      word-wrap: break-word;
+      color: #fff;
+      word-break: break-all;
+    }
+
   </style>
 </head>
 <body>
@@ -105,19 +141,24 @@
     <p>Select a mood to get started!</p>
   </div>
 
+  <!-- Checkout Banner with Visible Link -->
+  <div class="checkout-banner">
+    <span class="link-text">https://batch9-pspp.vercel.app/</span> <!-- Visible URL -->
+  </div>
+
   <script>
     const jokes = [
-  "Your life is a joke, and the punchline is that no one’s laughing.",
-  "You’re not a work in progress, you’re a disaster waiting for an audience.",
-  "Your life is like a broken pencil—pointless and nobody wants to deal with it.",
-  "The only thing consistent in your life is that it’s falling apart.",
-  "Your life’s a trainwreck, but it’s more like a never-ending pile-up on the same tracks.",
-  "If life’s a game, you’ve been stuck on ‘Game Over’ for years.",
-  "You’re like a password that’s been forgotten. No one knows what to do with you anymore.",
-  "Your life is like a bad reality show: scripted, awkward, and full of cringe-worthy moments.",
-  "You’re not lost in life; you’re just too far gone to find your way back.",
-  "Life’s not a journey for you—it’s a countdown to the inevitable crash landing."
-];
+      "Your life is a joke, and the punchline is that no one’s laughing.",
+      "You’re not a work in progress, you’re a disaster waiting for an audience.",
+      "Your life is like a broken pencil—pointless and nobody wants to deal with it.",
+      "The only thing consistent in your life is that it’s falling apart.",
+      "Your life’s a trainwreck, but it’s more like a never-ending pile-up on the same tracks.",
+      "If life’s a game, you’ve been stuck on ‘Game Over’ for years.",
+      "You’re like a password that’s been forgotten. No one knows what to do with you anymore.",
+      "Your life is like a bad reality show: scripted, awkward, and full of cringe-worthy moments.",
+      "You’re not lost in life; you’re just too far gone to find your way back.",
+      "Life’s not a journey for you—it’s a countdown to the inevitable crash landing."
+    ];
 
     const roasts = [
       "You’re like a cloud. When you disappear, it’s a beautiful day.",
